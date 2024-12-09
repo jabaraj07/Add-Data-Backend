@@ -1,0 +1,30 @@
+<!-- src/main/resources/templates/login.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/style1.css}" />
+</head>
+<body>
+<div class='body'>
+
+    <div class='form-container'>
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" id="email" placeholder='Enter Your email' required />
+
+            <label htmlFor="password">Password</label>
+            <input type="password" name="password" id="password" placeholder='Enter Your password' required />
+            <button type='submit'>Submit</button>
+
+        </form>
+
+        <div class="switch">
+            Dont't have an account? <a href="/signup" >signup</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
