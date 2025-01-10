@@ -1,0 +1,17 @@
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+
+# Ignore build directories
+/target/
+/build/
+
+# Ignore OS-specific files
+*.DS_Store
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+
+# Ignore other files
+/node_modules/

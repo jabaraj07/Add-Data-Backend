@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.body > nav{
+  display: flex;
+  justify-content: space-between;
+}
+.body > nav > h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+.body nav ul li a:hover{
+  background-color: #ff00e6;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.body nav ul form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body nav ul form button{
+border: none;
+outline: none;
+background-color: black;
+color: white;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+.body nav ul form button:hover{
+background-color: #ff00e6;
+color: white;
+padding: 10px;
+border-radius: 10px;
+}
+nav{
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+.body > nav > ul{
+  display: flex;
+  gap: 10px;
+}
+.body > nav > ul > li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+
+}
+.body nav ul li a{
+  text-decoration: none;
+  color: white;
+    transition: 0.3s ease-in-out;
+}
+.content{
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+height:90vh
+}
+.wel{
+font-size:bold;
+color:green;
+}

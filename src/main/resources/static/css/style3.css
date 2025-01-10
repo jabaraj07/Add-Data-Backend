@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.body{
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 55%, #fad0c4 100%);
+  height: 100vh;
+}
+
+.body nav{
+  display: flex;
+  justify-content: space-between;
+}
+.body nav h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+nav{
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+.body nav ul{
+  display: flex;
+  gap: 25px;
+}
+.body nav ul li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  gap: 15px;
+
+}
+.body nav ul li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.body nav ul li a:hover{
+  background-color: #ff00e6;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
+}
+.sub-form-container{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  background-color: #fff;
+}
+.body nav ul form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body nav ul form button{
+border: none;
+outline: none;
+background-color: black;
+color: white;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+}
+.body nav ul form button:hover{
+background-color: #ff00e6;
+color: white;
+padding: 10px;
+border-radius: 10px;
+}
+.sub-form-container h2{
+  text-align: center;
+  margin: 10px 0;
+}
+.input-container{
+  border: 1px solid #ccc;
+  margin: 15px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+}
+.input-container > svg {
+  color: #a51296;
+  margin-right: 10px;
+  width:20px;
+  height:20px;
+}
+.input-container > input{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+}
+.input-container input::placeholder{
+font-size: 15px;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+.btn:hover{
+background-color: #ff00e6;
+}
+.btn{
+  width: 100%;
+  margin: 5px 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #a51296;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+@media screen and (max-width:430px) {
+  .sub-form-container{
+    width: 350px;
+  }
+}

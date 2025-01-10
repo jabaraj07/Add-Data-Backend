@@ -10,7 +10,11 @@
 
     <div class='form-container'>
         <h2>Login</h2>
+<!--        <div th:if="${error != null}" style="color: red;">-->
+<!--            <p th:text="${error}"></p>-->
+<!--        </div>-->
         <form action="/login" method="POST">
+
 
             <label htmlFor="email">Email</label>
             <input type="email" name="email" id="email" placeholder='Enter Your email' required />

@@ -42,6 +42,13 @@
   /* font-size: medium; */
 }
 
+.body nav ul li a:hover{
+  background-color: #ff00e6;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 .form-container form input{
   width: 100%;
   padding: 10px;

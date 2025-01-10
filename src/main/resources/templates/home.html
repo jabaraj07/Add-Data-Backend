@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Success</title>
+    <title>HOME</title>
     <link rel="stylesheet" th:href="@{/css/style2.css}" />
 </head>
 <body>
@@ -12,7 +12,7 @@
         <ul>
             <li><a href="/profile">PROFILE</a></li>
             <li><a href="/edit">EDIT</a></li>
-            <form th:action="@{/delete}" method="post">
+            <form th:action="@{/delete}" method="post" onsubmit="return handledelete();">
                 <button type="submit">DELETE</button>
             </form>
             <li><a href="/login">LOGOUT</a></li>
@@ -21,10 +21,11 @@
 </div>
 
 <div class="content">
-    <h1 class="wel">Welcome, <span th:text="${loginuservalue.name}"></span>!</h1>
+    <h1 class="wel">Welcome, <span th:text="${employee.name}"></span>!</h1>
     <p>Your Login was successful.</p>
 </div>
 
+<script th:src="@{/css/js/custom.js}"></script>
 
 </body>
 </html>

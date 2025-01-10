@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" th:href="@{/css/style4.css}" />
+</head>
+<body>
+
+<div class='body'>
+    <nav>
+        <h1>USER</h1>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/edit">EDIT</a></li>
+            <form th:action="@{/delete}" method="post" onsubmit="return handledelete();">
+                <button type="submit">DELETE</button>
+            </form>
+            <li><a href="/login">LOGOUT</a></li>
+        </ul>
+    </nav>
+
+    <div class='full-container'>
+
+        <div class='Detail-card'>
+
+            <h1>User Details</h1>
+
+            <div class='card'>
+
+                <div class='card-content' >Id <span>:</span> </div>
+                <span th:text="${employee.id}"></span>
+                <div class='card-content' >Name <span>:</span> </div>
+                <span th:text="${employee.name}"></span>
+
+                <div class='card-content'>Email <span>:</span> </div>
+                <div th:text="${employee.email}"></div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script th:src="@{/css/js/custom.js}"></script>
+</body>
+</html>
